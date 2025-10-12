@@ -92,11 +92,9 @@ Compartilhar momentos com você me fez descobrir que as coisas simples da vida s
     <div className="app">
       {/* Corações flutuantes de fundo */}
       <div className="hearts-background">
-        <div className="heart"></div>
-        <div className="heart"></div>
-        <div className="heart"></div>
-        <div className="heart"></div>
-        <div className="heart"></div>
+        {Array.from({ length: 50 }).map((_, index) => (
+          <div key={index} className="heart"></div>
+        ))}
       </div>
 
       {/* Áudio de fundo */}

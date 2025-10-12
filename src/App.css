@@ -20,8 +20,9 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  opacity: 0.15;
-  animation: float 15s infinite ease-in-out;
+  opacity: 0.2;
+  animation: float 10s infinite ease-in-out;
+  bottom: -100px;
 }
 
 .heart::before,
@@ -32,35 +33,17 @@
   color: #c41e3a;
 }
 
-.heart:nth-child(1) {
-  left: 10%;
-  animation-delay: 0s;
-  animation-duration: 12s;
-}
-
-.heart:nth-child(2) {
-  left: 30%;
-  animation-delay: 2s;
-  animation-duration: 14s;
-}
-
-.heart:nth-child(3) {
-  left: 50%;
-  animation-delay: 4s;
-  animation-duration: 16s;
-}
-
-.heart:nth-child(4) {
-  left: 70%;
-  animation-delay: 6s;
-  animation-duration: 13s;
-}
-
-.heart:nth-child(5) {
-  left: 90%;
-  animation-delay: 8s;
-  animation-duration: 15s;
-}
+/* Distribuir os corações pela tela com delays menores */
+.heart:nth-child(10n+1) { left: 5%; animation-delay: 0s; animation-duration: 11s; }
+.heart:nth-child(10n+2) { left: 15%; animation-delay: 0.5s; animation-duration: 12s; }
+.heart:nth-child(10n+3) { left: 25%; animation-delay: 1s; animation-duration: 13s; }
+.heart:nth-child(10n+4) { left: 35%; animation-delay: 1.5s; animation-duration: 11.5s; }
+.heart:nth-child(10n+5) { left: 45%; animation-delay: 2s; animation-duration: 12.5s; }
+.heart:nth-child(10n+6) { left: 55%; animation-delay: 2.5s; animation-duration: 13.5s; }
+.heart:nth-child(10n+7) { left: 65%; animation-delay: 3s; animation-duration: 11s; }
+.heart:nth-child(10n+8) { left: 75%; animation-delay: 3.5s; animation-duration: 12s; }
+.heart:nth-child(10n+9) { left: 85%; animation-delay: 4s; animation-duration: 13s; }
+.heart:nth-child(10n+10) { left: 95%; animation-delay: 4.5s; animation-duration: 12.5s; }
 
 @keyframes float {
   0% {
