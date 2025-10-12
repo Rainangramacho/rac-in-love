@@ -1,0 +1,21 @@
+📸 ADICIONE SUAS FOTOS AQUI!
+
+Coloque suas fotos nesta pasta com os seguintes nomes:
+
+✅ foto1.jpg
+✅ foto2.jpg
+✅ foto3.jpg
+✅ foto4.jpg
+✅ foto5.jpg
+
+DICAS:
+- Use fotos em alta qualidade
+- Formatos aceitos: JPG, PNG, JPEG
+- Tamanho recomendado: até 2MB cada
+- Proporção ideal: 4:3 ou 16:9
+
+QUER ADICIONAR MAIS FOTOS?
+Edite o arquivo src/App.jsx e adicione mais itens no array "momentos"!
+
+❤️ Divirta-se personalizando!
+

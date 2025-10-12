@@ -1,0 +1,335 @@
+.carrossel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 1.2s ease;
+  padding: 0 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Galeria wrapper */
+.galeria-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Botões de navegação */
+.nav-btn {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #c41e3a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #8B0000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.nav-btn:hover {
+  background: #8B0000;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
+}
+
+.nav-btn:active {
+  transform: scale(0.95);
+}
+
+/* Container scroll da galeria */
+.galeria-scroll {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  user-select: none;
+  background: transparent;
+}
+
+.galeria-scroll:active {
+  cursor: grabbing;
+}
+
+/* Track das fotos */
+.galeria-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.galeria-track.dragging {
+  transition: none;
+}
+
+.galeria-item {
+  min-width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding: 10px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Container Polaroid */
+.galeria-foto {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center top;
+  pointer-events: none;
+  user-select: none;
+  
+  /* Estilo Polaroid */
+  background: #ffffff;
+  padding: 22px 22px 65px 22px; /* Margem inferior maior (característica Polaroid) */
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  
+  /* Leve rotação aleatória para parecer mais natural */
+  transform: rotate(-1deg);
+  transition: transform 0.3s ease;
+}
+
+/* Efeito ao trocar de foto */
+.galeria-item:nth-child(even) .galeria-foto {
+  transform: rotate(1deg);
+}
+
+/* Indicadores */
+.galeria-indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.galeria-indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #c41e3a;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.galeria-indicador:hover {
+  background: rgba(196, 30, 58, 0.5);
+  transform: scale(1.2);
+}
+
+.galeria-indicador.ativo {
+  background: #8B0000;
+  border-color: #8B0000;
+  width: 35px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(139, 0, 0, 0.4);
+}
+
+/* Contador de fotos */
+.contador-fotos {
+  text-align: center;
+  margin-top: 10px;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Mensagem especial única */
+.mensagem-especial {
+  max-width: 800px;
+  margin: 50px auto 0;
+  padding: 35px 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(139, 0, 0, 0.1);
+  animation: fadeInUp 1s ease 0.3s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mensagem-texto {
+  font-size: 1.3rem;
+  color: #6B0F1A;
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 400;
+  white-space: pre-line;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .galeria-item {
+    height: 600px;
+    background: transparent;
+    padding: 18px;
+  }
+  
+  .galeria-foto {
+    padding: 18px 18px 50px 18px;
+  }
+  
+  .mensagem-especial {
+    padding: 30px 35px;
+  }
+  
+  .mensagem-texto {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carrossel-container {
+    padding: 0 15px;
+  }
+  
+  .galeria-wrapper {
+    gap: 10px;
+  }
+  
+  .nav-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  .galeria-item {
+    height: 530px;
+    padding: 15px;
+    background: transparent;
+  }
+  
+  .galeria-foto {
+    max-width: 90%;
+    padding: 15px 15px 45px 15px;
+  }
+  
+  .galeria-scroll {
+    touch-action: pan-y pinch-zoom;
+  }
+  
+  .galeria-indicadores {
+    gap: 10px;
+    margin-top: 25px;
+  }
+  
+  .contador-fotos {
+    font-size: 0.85rem;
+    margin-top: 8px;
+  }
+  
+  .galeria-indicador {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .galeria-indicador.ativo {
+    width: 30px;
+  }
+  
+  .mensagem-especial {
+    margin-top: 40px;
+    padding: 25px 30px;
+  }
+  
+  .mensagem-texto {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-wrapper {
+    gap: 8px;
+  }
+  
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  
+  .galeria-item {
+    height: 480px;
+    padding: 10px;
+    background: transparent;
+  }
+  
+  .galeria-foto {
+    max-width: 95%;
+    padding: 12px 12px 40px 12px;
+  }
+  
+  .galeria-indicadores {
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .contador-fotos {
+    font-size: 0.8rem;
+    margin-top: 8px;
+  }
+  
+  .galeria-indicador {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .galeria-indicador.ativo {
+    width: 24px;
+  }
+  
+  .mensagem-especial {
+    margin-top: 35px;
+    padding: 20px 25px;
+  }
+  
+  .mensagem-texto {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
