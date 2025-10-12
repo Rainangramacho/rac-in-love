@@ -192,7 +192,7 @@ RAC/
 
 ## ❤️ Feito com Amor
 
-Este site foi criado especialmente para comemorar momentos únicos e especiais. Personalize-o e torne-o ainda mais seu!
+Este site foi criado especialmente para comemorar momentos únicos e especiais.
 
 ---
 
