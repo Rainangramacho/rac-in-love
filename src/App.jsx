@@ -55,32 +55,33 @@ function App() {
   }
 
   // Dados das fotos
+  const baseUrl = import.meta.env.BASE_URL
   const fotos = [
-    '/fotos/foto1.jpg',
-    '/fotos/foto2.jpg',
-    '/fotos/foto3.jpg',
-    '/fotos/foto4.jpg',
-    '/fotos/foto5.jpg',
-    '/fotos/foto6.jpg',
-    '/fotos/foto7.jpg',
-    '/fotos/foto8.jpg',
-    '/fotos/foto9.jpg',
-    '/fotos/foto10.jpg',
-    '/fotos/foto11.jpg',
-    '/fotos/foto12.jpg',
-    '/fotos/foto13.jpg',
-    '/fotos/foto14.jpg',
-    '/fotos/foto15.jpg',
-    '/fotos/foto16.jpg',
-    '/fotos/foto17.jpg',
-    '/fotos/foto18.jpg',
-    '/fotos/foto19.jpg',
-    '/fotos/foto20.jpg',
-    '/fotos/foto21.jpg',
-    '/fotos/foto22.jpg',
-    '/fotos/foto23.jpg',
-    '/fotos/foto24.jpg',
-    '/fotos/foto25.jpg'
+    `${baseUrl}fotos/foto1.jpg`,
+    `${baseUrl}fotos/foto2.jpg`,
+    `${baseUrl}fotos/foto3.jpg`,
+    `${baseUrl}fotos/foto4.jpg`,
+    `${baseUrl}fotos/foto5.jpg`,
+    `${baseUrl}fotos/foto6.jpg`,
+    `${baseUrl}fotos/foto7.jpg`,
+    `${baseUrl}fotos/foto8.jpg`,
+    `${baseUrl}fotos/foto9.jpg`,
+    `${baseUrl}fotos/foto10.jpg`,
+    `${baseUrl}fotos/foto11.jpg`,
+    `${baseUrl}fotos/foto12.jpg`,
+    `${baseUrl}fotos/foto13.jpg`,
+    `${baseUrl}fotos/foto14.jpg`,
+    `${baseUrl}fotos/foto15.jpg`,
+    `${baseUrl}fotos/foto16.jpg`,
+    `${baseUrl}fotos/foto17.jpg`,
+    `${baseUrl}fotos/foto18.jpg`,
+    `${baseUrl}fotos/foto19.jpg`,
+    `${baseUrl}fotos/foto20.jpg`,
+    `${baseUrl}fotos/foto21.jpg`,
+    `${baseUrl}fotos/foto22.jpg`,
+    `${baseUrl}fotos/foto23.jpg`,
+    `${baseUrl}fotos/foto24.jpg`,
+    `${baseUrl}fotos/foto25.jpg`
   ]
   
   // Mensagem única para sua namorada
@@ -99,7 +100,7 @@ Compartilhar momentos com você me fez descobrir que as coisas simples da vida s
 
       {/* Áudio de fundo */}
       <audio ref={audioRef} loop autoPlay>
-        <source src="/musica.mp3" type="audio/mpeg" />
+        <source src={`${baseUrl}musica.mp3`} type="audio/mpeg" />
       </audio>
 
       {/* Conteúdo principal */}
