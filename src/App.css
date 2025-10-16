@@ -263,3 +263,51 @@
   }
 }
 
+/* Seção da imagem do casal pixel art */
+.casal-pixel-section {
+  width: 100%;
+  max-width: 500px;
+  margin: 60px auto 40px auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.15), rgba(220, 20, 60, 0.15));
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 8px 32px rgba(139, 0, 0, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.casal-pixel-image {
+  display: block;
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.3),
+    0 0 0 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.casal-pixel-image:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .casal-pixel-section {
+    margin: 40px 20px 30px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .casal-pixel-section {
+    margin: 30px 10px 20px;
+    padding: 15px;
+  }
+}
+

@@ -122,6 +122,14 @@ Compartilhar momentos com você me fez descobrir que as coisas simples da vida s
 
         <VideosYoutube />
 
+        <div className="casal-pixel-section">
+          <img 
+            src={`${baseUrl}casal-pixel.png`} 
+            alt="Nós dois em pixel art" 
+            className="casal-pixel-image"
+          />
+        </div>
+
         <footer className="footer">
           <p className="footer-text">
             Com você tudo é mais leve e divertido, pois eu sinto que posso ser eu mesmo! Te amo, minha preta ❤️
