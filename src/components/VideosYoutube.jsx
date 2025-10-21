@@ -7,15 +7,27 @@ function VideosYoutube() {
   const videos = [
     {
       id: 'BluOtCeD9LM',
-      titulo: 'Vídeo 1 - Nosso Momento Especial'
+      titulo: 'Vídeo 1 - Nossa primeira música'
     },
     {
       id: 'GSQLVTuqDxk',
-      titulo: 'Vídeo 2 - Memórias Juntos'
+      titulo: 'Vídeo 2 - Uma pedrada de Baiana'
     },
     {
       id: 'S2JA2BIlt94',
-      titulo: 'Vídeo 3 - Nossa História'
+      titulo: 'Vídeo 3 - Uma de suas músicas favoritas'
+    },
+    {
+      id: 'xKSl4EvdqRY',
+      titulo: 'Vídeo 4 - Uma das músicas que você mais ouviu pensando em nós'
+    },
+    {
+      id: 'bnVUHWCynig',
+      titulo: 'Vídeo 5 - Nosso despertador'
+    },
+    {
+      id: 'bn-MBUt0mc0',
+      titulo: 'Vídeo 6 - Uma que mostra o que eu estou sempre por você'
     }
   ]
 
@@ -29,7 +41,7 @@ function VideosYoutube() {
 
   return (
     <div className="videos-container">
-      <h2 className="videos-titulo">Nossos Músicas</h2>
+      <h2 className="videos-titulo">Nossas Músicas</h2>
       
       <div className="video-player-wrapper">
         {/* Botão Anterior */}
