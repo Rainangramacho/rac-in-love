@@ -85,9 +85,16 @@ function App() {
   ]
   
   // Mensagem única para sua namorada
-  const mensagemEspecial = `Desde que você chegou, tudo ganhou mais cor e significado. Seus gestos, suas palavras e sua presença tornam meus dias mais leves e cheios de alegria.
+  const mensagemEspecial = `Desde que a gente começou a conversar, eu senti que aquilo era algo diferente, que era melhor do que eu imaginava. Sua personalidade parecia ser tão única, teu humor quebradinho, tua forma de ver a vida muito parecida com a minha... Isso tudo chamou muito minha atenção. Sempre que a gente conversava, eu ficava bestinha, sorrindo sem parar, com o coração disparando demais kkkkkkkk.
 
-Compartilhar momentos com você me fez descobrir que as coisas simples da vida são as mais valiosas. Te amo hoje e sempre! ❤️`
+Com o tempo, eu fui percebendo que tava me apaixonando — aos poucos, a cada meme recebido e enviado, a cada conversa aleatória que tínhamos, a cada conversa séria sobre a vida...
+Não demorou muito pra eu ficar completamente arriado por você. Eu desejei por muito tempo que a gente pudesse sair e se conhecer de verdade, então, quando isso aconteceu, foi absolutamente INCRÍVEL! Você era tudo o que, de fato, se mostrava pra mim (na verdade, é ainda melhor). Aquele dia foi um dos melhores dias da minha vida, sem dúvidas!
+
+Hoje, eu amo tanto a relação que nós estamos criando, que eu quero construir a minha vida e a minha família com você... Minha não, NOSSA! Você é a coisa mais perfeita que já poderia ter aparecido na minha vida, e eu sou muiiito grato a Pai Oxalá (e a todos os Orixás, é claro) por ter me abençoado com esse presente maravilhoso que é você.
+
+Eu te amo muito, minha preta! Te amo em cada universo! Te amo um zilhão de bilhões!
+
+Um xero de seu Graminho ❤️`
 
   return (
     <div className="app">
@@ -132,7 +139,8 @@ Compartilhar momentos com você me fez descobrir que as coisas simples da vida s
 
         <footer className="footer">
           <p className="footer-text">
-            Com você tudo é mais leve e divertido, pois eu sinto que posso ser eu mesmo! Te amo, minha preta ❤️
+            Com você tudo é mais leve e perfeito, pois eu sinto que posso ser eu mesmo com você! 
+            Te amo, minha pamonha!
           </p>
           <br/>
           <p className="footer-signature">Com todo amor do mundo, seu Graminho ❤️</p>
